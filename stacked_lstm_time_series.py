@@ -77,14 +77,10 @@ def difference(dataset, interval=1):
     return diff
 
 # Inverse differencing method.
-
-
 def inverse_difference(last_ob, value):
     return value + last_ob
 
 # Reshape data into format ([samples, timesteps, features])
-
-
 def restructure_data(X, y, lag, future_width):
     X_, y_ = [], []
     idx_range = range(len(X) - (lag + future_width))
