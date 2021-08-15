@@ -1,0 +1,4 @@
+Note: 
+  This neural net contains a stacked LSTM structure with a lot of parameters. 
+  Training on a GPU is absolutely mandatory. 
+  I trained the model on the google colab infrastructure.
