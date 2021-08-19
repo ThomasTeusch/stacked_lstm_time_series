@@ -241,6 +241,7 @@ def plot(y1, y2, title):
   plt.plot(y2, label='Prediction')
   plt.title(title)
   plt.legend()
+  plt.savefig(title + '.png')
   plt.show()
 
 plot(y_train, y_pred_train, 'Training')
