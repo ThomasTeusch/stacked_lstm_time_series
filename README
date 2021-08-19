@@ -1,4 +1,10 @@
-**Note** 
-  This neural net contains a stacked LSTM structure with a lot of parameters. 
-  Training on a GPU is absolutely mandatory. 
-  I trained the model on the google colab infrastructure.
+NOTE
+This neural net contains a stacked LSTM structure with a lot of parameters. 
+Training on a GPU is absolutely mandatory. 
+I trained the model on the Google colab infrastructure.
+
+RESULTS: To be included
+              RMSE        MAE
+  Training    200.00      200.00
+  Validat.    200.00      200.00
+  Test        200.00      200.00
