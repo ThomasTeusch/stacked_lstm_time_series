@@ -32,7 +32,7 @@ P_VAL = 0.10 # Validation set size
 P_TEST = 1 - P_TRAIN - P_VAL # Test set size
 
 # Import data from csv via pandas
-inputpath = os.getcwd() + "/multivariate_time_series/"
+inputpath = os.getcwd() + "/"
 inputfile = "dataset.csv"
 df = pd.read_csv(inputpath+inputfile, sep=',')
 
