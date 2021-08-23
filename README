@@ -4,7 +4,7 @@ Training on a GPU is absolutely mandatory.
 I trained the model on the Google colab infrastructure.
 
 RESULTS: To be included
-              RMSE        MAE
-  Training    200.00      200.00
-  Validat.    200.00      200.00
-  Test        200.00      200.00
+              RMSE     MAE
+  Training    693      379
+  Validat.    725      392
+  Test        799      445
