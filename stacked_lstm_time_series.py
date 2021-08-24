@@ -128,23 +128,25 @@ print(X_train.shape, y_train.shape)
 initializer = keras.initializers.HeNormal()
 
 # Stacked LSTM architecture
-# Three stacked LSTMs with dropout to prevent overfitting
+# Three stacked LSTMs, the first one bidirectional with dropout and an additional dropout layer to prevent overfitting
 inputs = keras.layers.Input(shape=(X_train.shape[1], X_train.shape[2]))
-lstm1 = keras.layers.LSTM(64,
-                          kernel_initializer=initializer,
-                          dropout = 0.2,
-                          return_sequences=True
-                        )(inputs)
+lstm1 = keras.layers.Bidirectional(
+          keras.layers.LSTM(256,
+                            kernel_initializer=initializer,
+                            dropout = 0.1,
+                            return_sequences=True
+                        )
+          )(inputs)
 lstm2 = keras.layers.LSTM(128,
                           kernel_initializer=initializer,
-                          dropout = 0.2,
+                          dropout = 0.0,
                           return_sequences=True
                          )(lstm1)
 lstm3 = keras.layers.LSTM(64,
                           kernel_initializer=initializer,
-                          dropout = 0.2,
+                          dropout = 0.0,
                           return_sequences=False
-                        )(lstm2)
+                         )(lstm2)
 dense1 = keras.layers.Dense(64)(lstm3)
 drop1 = keras.layers.Dropout(0.2)(dense1)
 outputs = keras.layers.Dense(1)(drop1)
