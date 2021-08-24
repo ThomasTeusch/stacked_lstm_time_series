@@ -3,4 +3,4 @@ This neural net contains a stacked LSTM structure with a lot of parameters.
 Training on a GPU is absolutely mandatory. 
 I trained the model on the Google colab infrastructure.
 
-![alt text](https://github.com/ThomasTeusch/stacked_lstm_time_series/blob/e02bc74605e1e53eba79357dcca0a0ac6d212b9a/training_process.png)
+![alt text](training_process.png)
