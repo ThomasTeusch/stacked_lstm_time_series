@@ -1,3 +1,5 @@
+### Multivariate bidirectional stacked LSTM model
+
 This repository builds a neural net based on a stacked LSTM structure with a lot of parameters. 
 The target is to predict the power generation of a wind park given the temperature, pressure, wind direction and wind speed.
 Due to the large amount of parameters, training on a GPU is absolutely mandatory. 
